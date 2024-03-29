@@ -1,0 +1,36 @@
+Q.1 - Write a blog on Difference between HTTP1.1 vs HTTP2
+
+HTTP1.1:-
+	It was introduced in 1997, internet landcape was constantly changing with website beacming more dynamic and heavy. 
+	Feature like CORS, Keep-alive was introduced in this update. This option enables re-using of the same TCP connection for multiple HTTP request.
+
+HTTP 2.0:-
+	HPACK - Header datas is separate from request data and can be zipped. It redues HTTP request size.
+	PUSH - PUSH frames emable us to send mandatory resources in advance along with an HTTP response.
+	We can keep using gzip, leverage browser caching, minify CSS/JS to further improve the speed.
+	Almost all the modern web servers support this.
+
+
+Q.2 - Write a blog about objects and its internal representation in Javascript
+
+	Objects are important data types in javascript. Objects are different than primitive datatypes for example number, string, boolean, etc. Primitive data types contain one value but Objects can hold many values in form of Key: value pair. These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+	
+	Every object has some property associated with some value. These values can be accessed using these properties associated with them
+
+var myCar = new Object();
+myCar.make = 'Suzuki';
+myCar.model = 'Altros';
+myCar.year = 1978;
+myCar.wheels = 2;
+
+After creating myCar object, the value inside the object can be accessed using keys.
+i.e.
+myCar.year
+-Output: 1978
+myCar.model
+-Output: 'Altros'
+These values can be accessed using brackets notation also.
+myCar[year]
+-Output: 1978
+myCar[make]
+-Output: 'Suzuki'
